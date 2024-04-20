@@ -22,6 +22,6 @@ app.get("/api/benficaHomeScheduledGames", async (req, res) => {
     res.json(await response.json())
 });
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log("Listening on port 3000");
 })
