@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 
-const holidayUrl = 'http://services.sapo.pt/Holiday?wsdl';
+const holidayUrl = 'https://services.sapo.pt/Metadata/Contract/Holiday?culture=PT';
 
 app.get("/api/benficaHomeScheduledGames", async (req, res) => {
     const response = await fetch(
